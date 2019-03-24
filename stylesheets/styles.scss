@@ -13,10 +13,9 @@ html {
   line-height: 1.4; /*行高*/
   /*color: #000;*/ /*顏色設定*/
   font-family: "Noto Sans TC", sans-serif;
-
 }
 
-body{
+body {
   margin: 0;
 }
 
@@ -48,12 +47,11 @@ a:hover {
 
 /*---剁手網---*/
 .top-menu {
-
   button {
     display: none;
   }
 
-  a{
+  a {
     color: #000;
     display: block;
     height: 60px;
@@ -90,7 +88,7 @@ a:hover {
       justify-content: space-between;
       position: absolute;
       right: 10%;
-      a{
+      a {
         width: 50px;
         display: block;
         text-align: center;
@@ -100,14 +98,12 @@ a:hover {
       font-size: 25px;
       position: absolute;
       right: 2%;
-      a{
+      a {
         width: 50px;
         text-align: center;
       }
     }
   }
-  
-  
 
   a:hover {
     background: #fff;
@@ -138,7 +134,7 @@ a:hover {
   h1 {
     text-align: center;
     margin: 0;
-    padding:40px 0;
+    padding: 40px 0;
     height: 30px;
   }
   h2 {
@@ -149,7 +145,6 @@ a:hover {
   p {
     text-align: center;
     margin: 0 0 20px 0;
-
   }
   img {
     width: 250px;
@@ -163,10 +158,9 @@ a:hover {
     flex-wrap: wrap;
     padding-block-end: 20px;
   }
-  a{
+  a {
     width: 300px;
     margin: 0 auto;
-
   }
 }
 
@@ -181,6 +175,164 @@ a:hover {
     padding-top: 30px;
   }
 }
+
+// html2
+/* 商品層次 */
+.index .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* 商品介紹 */
+
+.product .container {
+  display: flex;
+  //   background: #ddd6f0;
+
+  .left {
+    /* 商品介紹---左半邊 */
+    // background: #ffbaa3;
+    width: 48%;
+    margin-right: 2%;
+
+    img {
+      display: block;
+      margin: 0;
+      width: 100%;
+    }
+    .introduce {
+      margin: 40px 0;
+
+      //   background: #0081c3;
+    }
+  }
+  .right {
+    /* 商品介紹---右半邊 */
+    // background: #d1ecc8;
+    width: 48%;
+    margin-left: 2%;
+    h1 {
+      margin: 0;
+    }
+    p {
+      margin: 0;
+    }
+    select {
+      height: 28px;
+      width: 100%;
+      margin-bottom: 25px;
+      font-family: "Noto Sans TC", sans-serif;
+    }
+    #enter-number {
+      height: 20px;
+      margin: 25px 0;
+      font-family: "Noto Sans TC", sans-serif;
+    }
+    #enter-cart {
+      width: 100%;
+      height: 50px;
+      font-size: 30px;
+      margin-bottom: 25px;
+      font-family: "Noto Sans TC", sans-serif;
+    }
+    .down {
+      img {
+        width: 150px;
+        margin-right: 10px;
+      }
+      .else-product {
+        display: flex;
+        margin: 10px 0 0;
+      }
+    }
+  }
+}
+
+/* 上下一項商品 */
+.next {
+  width: 40%;
+  margin: 30px auto;
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 25px;
+    justify-content: space-between;
+    font-family: "Noto Sans TC", sans-serif;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+// html3
+.index a {
+  line-height: 5;
+}
+
+.pay {
+  .hr-width{
+    width: 45%;
+    margin: 8px 0;
+    margin-left: 55%;
+  }
+  .cart-table {
+    width: 100%;
+    margin: 0;
+    
+
+    .c1 {
+      width: 55%;
+    }
+    .c2 {
+      width: 15%;
+      text-align: center;
+    }
+    .c3 {
+      width: 15%;
+      text-align: center;
+    }
+    .c4 {
+      width: 15%;
+      text-align: end;
+    }
+
+    .product {
+      display: flex;
+      img {
+        width: 150px;
+        margin-right: 10px;
+      }
+    }
+
+    .product-number {
+      width: 50px;
+      text-align: end;
+    }
+
+    .words {
+      h1 {
+        font-size: 18px;
+        margin: 0;
+      }
+      p {
+        margin-top: 0;
+      }
+    }
+    #pay-button {
+      width: 100%;
+      height: 50px;
+      margin: 20px auto;
+      background: #000;
+      color: #fff;
+      font-family: "Noto Sans TC", sans-serif;
+    }
+    
+  }
+}
+
 
 /*bookemail*/
 .book-email {
@@ -232,12 +384,11 @@ a:hover {
     display: flex;
     list-style: none;
     justify-content: center;
-    
+
     a:hover {
       background: #fff;
       text-decoration: none;
     }
-    
   }
 }
 
@@ -249,28 +400,24 @@ a:hover {
   padding-top: 5px;
 }
 
-@media screen and (max-width:1140px){
-  .container{
-    width:820px;
+@media screen and (max-width: 1140px) {
+  .container {
+    width: 820px;
   }
-  .hot-items{
-    
-  li{
-    margin: 0 30px;
-  } 
-  
-
+  .hot-items {
+    li {
+      margin: 0 30px;
+    }
   }
 }
 
-@media screen and (max-width:880px){
-  .container{
-    width:740px;
+@media screen and (max-width: 880px) {
+  .container {
+    width: 740px;
   }
   .index-image {
-    h1{
+    h1 {
       left: 55%;
-
     }
     span {
       display: block;
@@ -278,42 +425,47 @@ a:hover {
       left: 2em;
     }
   }
-  // .top-menu {
 
-  //   ul {
-  //     &.about-web {
-  //       font-size: 18px;
-  //       width: 250px;
-  //     }
-  //     &.share-and-cart {
-  //       width: 250px;
-  //     }
-  //   }
-
-  // }
+  // html2
+  .next ul {
+    font-size: 20px;
+  }
 }
 
-@media screen and (max-width:767px){
-  .container{
-    width: 90%;;
+@media screen and (max-width: 767px) {
+  .container {
+    width: 90%;
   }
-  .top-menu{
-    ul.web-name{
+  .top-menu {
+    ul.web-name {
       position: absolute;
       left: 41.1025%;
     }
   }
 
+  // html2
+  .product .container .right .else-product {
+    img {
+      width: 130px;
+    }
+    h3 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+
+
 }
 
-@media screen and (max-width:640px){
+@media screen and (max-width: 640px) {
   .top-menu {
     position: relative;
     .container {
       width: 100%;
     }
     ul.about-web {
-      
       flex-direction: column;
       position: absolute;
       top: 60px;
@@ -332,23 +484,54 @@ a:hover {
       position: absolute;
       left: 5%;
     }
-
-
   }
   .index-image {
-    h1{
+    h1 {
       // left: 55%;
       span {
         display: block;
         position: relative;
         left: 1em;
       }
-
     }
   }
+
+  // html2
+  .else-product {
+    flex-direction: column;
+  }
+  .product .container .right .else-product {
+    img {
+      width: 100%;
+      margin: 0;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 0;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  }
+  .next {
+    width: 50%;
+  }
+  .product .container .right #enter-cart {
+    margin-bottom: 15px;
+  }
+
+  .discount-number{
+    width: 120px;
+}
+.pay .cart-table{
+    margin: 0 auto;
 }
 
-@media screen and (max-width:580px){
+
+}
+
+@media screen and (max-width: 580px) {
   .just-cut-your-hand {
     font-size: 15px;
   }

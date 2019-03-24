@@ -559,6 +559,181 @@ a:hover {
   padding-top: 30px;
 }
 
+/* 商品層次 */
+.index .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* 商品介紹 */
+.product .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product .container .left {
+  /* 商品介紹---左半邊 */
+  width: 48%;
+  margin-right: 2%;
+}
+
+.product .container .left img {
+  display: block;
+  margin: 0;
+  width: 100%;
+}
+
+.product .container .left .introduce {
+  margin: 40px 0;
+}
+
+.product .container .right {
+  /* 商品介紹---右半邊 */
+  width: 48%;
+  margin-left: 2%;
+}
+
+.product .container .right h1 {
+  margin: 0;
+}
+
+.product .container .right p {
+  margin: 0;
+}
+
+.product .container .right select {
+  height: 28px;
+  width: 100%;
+  margin-bottom: 25px;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.product .container .right #enter-number {
+  height: 20px;
+  margin: 25px 0;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.product .container .right #enter-cart {
+  width: 100%;
+  height: 50px;
+  font-size: 30px;
+  margin-bottom: 25px;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.product .container .right .down img {
+  width: 150px;
+  margin-right: 10px;
+}
+
+.product .container .right .down .else-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0 0;
+}
+
+/* 上下一項商品 */
+.next {
+  width: 40%;
+  margin: 30px auto;
+}
+
+.next ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.next a:hover {
+  text-decoration: none;
+}
+
+.index a {
+  line-height: 5;
+}
+
+.pay .hr-width {
+  width: 45%;
+  margin: 8px 0;
+  margin-left: 55%;
+}
+
+.pay .cart-table {
+  width: 100%;
+  margin: 0;
+}
+
+.pay .cart-table .c1 {
+  width: 55%;
+}
+
+.pay .cart-table .c2 {
+  width: 15%;
+  text-align: center;
+}
+
+.pay .cart-table .c3 {
+  width: 15%;
+  text-align: center;
+}
+
+.pay .cart-table .c4 {
+  width: 15%;
+  text-align: end;
+}
+
+.pay .cart-table .product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pay .cart-table .product img {
+  width: 150px;
+  margin-right: 10px;
+}
+
+.pay .cart-table .product-number {
+  width: 50px;
+  text-align: end;
+}
+
+.pay .cart-table .words h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.pay .cart-table .words p {
+  margin-top: 0;
+}
+
+.pay .cart-table #pay-button {
+  width: 100%;
+  height: 50px;
+  margin: 20px auto;
+  background: #000;
+  color: #fff;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
 /*bookemail*/
 .book-email {
   display: block;
@@ -657,6 +832,9 @@ a:hover {
     position: relative;
     left: 2em;
   }
+  .next ul {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -666,6 +844,15 @@ a:hover {
   .top-menu ul.web-name {
     position: absolute;
     left: 41.1025%;
+  }
+  .product .container .right .else-product img {
+    width: 130px;
+  }
+  .product .container .right .else-product h3 {
+    font-size: 16px;
+  }
+  .product .container .right .else-product p {
+    font-size: 14px;
   }
 }
 
@@ -705,6 +892,36 @@ a:hover {
     position: relative;
     left: 1em;
   }
+  .else-product {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product .container .right .else-product img {
+    width: 100%;
+    margin: 0;
+  }
+  .product .container .right .else-product h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  .product .container .right .else-product p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .next {
+    width: 50%;
+  }
+  .product .container .right #enter-cart {
+    margin-bottom: 15px;
+  }
+  .discount-number {
+    width: 120px;
+  }
+  .pay .cart-table {
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -712,4 +929,4 @@ a:hover {
     font-size: 15px;
   }
 }
-/*# sourceMappingURL=styles01.css.map */
+/*# sourceMappingURL=styles.css.map */
