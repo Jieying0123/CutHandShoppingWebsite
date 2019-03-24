@@ -1,0 +1,355 @@
+@import "normalize";
+
+%nostyle-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  background: #ffffd1; /*背景色*/
+  font-size: 16px; /*字型大小*/
+  /*font-family: sans-serif;*/ /*字型*/
+  line-height: 1.4; /*行高*/
+  /*color: #000;*/ /*顏色設定*/
+  font-family: "Noto Sans TC", sans-serif;
+
+}
+
+body{
+  margin: 0;
+}
+
+a {
+  color: #009ced;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0081c3;
+  text-decoration: underline;
+}
+
+/*網頁內容顯示寬度*/
+.container {
+  width: 1080px; /*網頁內容顯示寬度*/
+  margin: 0 auto; /*邊界寬度 上下0 左右auto*/
+  justify-content: center;
+}
+
+/*春節...*/
+.top-block {
+  background: #000;
+  color: #dda0dd;
+  font-size: 14px;
+  line-height: 3;
+  text-align: center;
+}
+
+/*---剁手網---*/
+.top-menu {
+
+  button {
+    display: none;
+  }
+
+  a{
+    color: #000;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+  }
+
+  background: #babaff;
+  font-size: 18px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+
+  ul {
+    @extend %nostyle-list;
+    &.about-web {
+      width: 250px;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      left: 2%;
+    }
+    &.web-name {
+      font-size: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      left: 46.1025%;
+    }
+    &.share {
+      font-size: 25px;
+      width: 150px;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      right: 10%;
+      a{
+        width: 50px;
+        display: block;
+        text-align: center;
+      }
+    }
+    &.cart {
+      font-size: 25px;
+      position: absolute;
+      right: 2%;
+      a{
+        width: 50px;
+        text-align: center;
+      }
+    }
+  }
+  
+  
+
+  a:hover {
+    background: #fff;
+    text-decoration: none;
+  }
+}
+
+/*美圖*/
+.index-image {
+  height: 450px;
+  background: url(../images/shopping01.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+  h1 {
+    font-size: 50px;
+    position: absolute;
+    color: #000;
+    margin: 0;
+    left: 50px;
+    /* right: 0px; */
+    top: 30px;
+    /* left: 0px; */
+  }
+}
+
+.hot-items {
+  background: #baffba;
+  h1 {
+    text-align: center;
+    margin: 0;
+    padding:40px 0;
+    height: 30px;
+  }
+  h2 {
+    font-size: 6;
+    margin: 0;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    margin: 0 0 20px 0;
+
+  }
+  img {
+    width: 250px;
+    height: 250px;
+    // margin-block-start: 50px;
+  }
+  ul {
+    @extend %nostyle-list;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-block-end: 20px;
+  }
+  a{
+    width: 300px;
+    margin: 0 auto;
+
+  }
+}
+
+/*就是要你剁手*/
+.just-cut-your-hand {
+  margin: 0;
+  height: 260px;
+  background: rgb(121, 117, 117);
+  text-align: center;
+  h1 {
+    margin: 0;
+    padding-top: 30px;
+  }
+}
+
+/*bookemail*/
+.book-email {
+  display: block;
+  width: 400px;
+  height: 250px;
+  margin: 0 auto;
+  h1 {
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .search i {
+    position: relative;
+    left: 32px;
+  }
+  .search input {
+    width: 320px;
+    height: 28px;
+    border: transparent 2px solid;
+    border-bottom-color: #000;
+    padding-left: 32px;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  .button {
+    width: 400px;
+    height: 28px;
+    background: #0081c3;
+    text-align: center;
+  }
+}
+
+/*foot-menu*/
+.foot-menu {
+  a {
+    color: #000;
+    display: block;
+    height: 50px;
+    width: 100px;
+    line-height: 50px;
+    text-align: center;
+  }
+  ul {
+    background: #ffbaa3;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    
+    a:hover {
+      background: #fff;
+      text-decoration: none;
+    }
+    
+  }
+}
+
+/*BSlogo*/
+.bs {
+  background: rgb(121, 117, 117);
+  height: 30px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+@media screen and (max-width:1140px){
+  .container{
+    width:820px;
+  }
+  .hot-items{
+    
+  li{
+    margin: 0 30px;
+  } 
+  
+
+  }
+}
+
+@media screen and (max-width:880px){
+  .container{
+    width:740px;
+  }
+  .index-image {
+    h1{
+      left: 55%;
+
+    }
+    span {
+      display: block;
+      position: relative;
+      left: 2em;
+    }
+  }
+  // .top-menu {
+
+  //   ul {
+  //     &.about-web {
+  //       font-size: 18px;
+  //       width: 250px;
+  //     }
+  //     &.share-and-cart {
+  //       width: 250px;
+  //     }
+  //   }
+
+  // }
+}
+
+@media screen and (max-width:767px){
+  .container{
+    width: 90%;;
+  }
+  .top-menu{
+    ul.web-name{
+      position: absolute;
+      left: 41.1025%;
+    }
+  }
+
+}
+
+@media screen and (max-width:640px){
+  .top-menu {
+    position: relative;
+    .container {
+      width: 100%;
+    }
+    ul.about-web {
+      
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      width: 100%;
+      background: rgba(#fff, 0.9);
+      z-index: 5;
+      align-items: center;
+    }
+    button {
+      display: block;
+      background: #babaff;
+      border: #fff 2px solid;
+      border-radius: 5%;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      left: 5%;
+    }
+
+
+  }
+  .index-image {
+    h1{
+      // left: 55%;
+      span {
+        display: block;
+        position: relative;
+        left: 1em;
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width:580px){
+  .just-cut-your-hand {
+    font-size: 15px;
+  }
+}
